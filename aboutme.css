@@ -1,0 +1,272 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imgs/HomesemVector.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inder", sans-serif;
+}
+
+.logo {
+  width: 140px;
+  margin-left: 10%;
+}
+
+nav {
+  padding: 10px 0;
+  align-items: center;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inder", sans-serif;
+}
+
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#bout {
+  border-bottom: solid white 3px;
+  margin-left: 3%;
+}
+
+nav a:hover {
+  color: aliceblue;
+}
+
+.content {
+  color: white;
+}
+
+#title_desktop,
+#title_mobile {
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#title_desktop img {
+  display: block;
+  margin-top: 0;
+}
+
+#divEU {
+  text-align: center;
+  position: relative;
+}
+
+.material-symbols-outlined {
+  text-decoration: none;
+  color: white;
+}
+#divTEXTO {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+#divTEXTO p {
+  color: #fff;
+  padding: 20px;
+  font-size: 1.25rem;
+  font-family: "Inder", sans-serif;
+}
+
+#divEU_mobile,
+#title_mobile {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: rgb(62, 61, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(62, 61, 61, 1) 0%,
+    rgba(4, 4, 4, 1) 66%
+  );
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.col h3 {
+  position: relative;
+  margin-bottom: 40px;
+  color: white;
+  text-align: left;
+}
+.col p {
+  color: gray;
+  font-size: 1.2em;
+}
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid gray;
+  margin: 20px 0;
+}
+h4 {
+  color: gray;
+}
+div.col #especial {
+  color: white;
+  margin-right: 5px;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.1em;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+}
+form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+form .fas {
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+::-webkit-scrollbar { /*Trilho */
+    width: 10px;
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb { /* Rolagem */
+    background: #433d3d;
+    border-radius: 10px;
+  }
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 479px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #divEU_mobile,
+  #title_mobile {
+    display: block;
+  }
+
+  #divEU_desktop,
+  #title_desktop {
+    display: none;
+
+  }
+}
+
+/* Tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  .background {
+    flex-direction: column;
+  }
+}

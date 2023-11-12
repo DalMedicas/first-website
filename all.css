@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blinker&family=Inder&family=Jim+Nightshade&family=Jomhuria&family=Kotta+One&family=Kreon&family=Krub&family=Poppins&family=Work+Sans&display=swap");
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(113,113,113);
+    background: linear-gradient(90deg, rgba(113,113,113, 1) 0%, rgba(4,4,4, 1) 100%);
+}
+.geral {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding-top: 5%;
+}
+
+.logo {
+  max-width: 140px;
+}
+nav i {
+  width: 14px;
+}
+.texto {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  width: 65%;
+}
+.texto h1 {
+  color: white;
+  font-size: 5em;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.texto p {
+  font-family: "Kreon", serif;
+  color: white;
+  font-size: 1.2em;
+
+}
+
+::-webkit-scrollbar { /*Trilho */
+  width: 10px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb { /* Rolagem */
+  background: #433d3d;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+
+.geral {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0%;
+  width: fit-content;
+}
+.imagem img{
+  opacity: 0.7;
+  max-width: 100%;
+  max-height: 100%;
+}
+.imagem {
+  align-items: center;
+}
+.texto {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.texto h1 {
+  margin-top: 5%;
+  font-size: 5em;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+.texto p {
+  color: white;
+  font-size: 1.2em;
+}
+}

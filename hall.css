@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./imgs/HallOfFame.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  overflow-x: hidden;
+}
+.logo {
+  width: 140px;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+#halls {
+  font-size: 10em;
+  color: white;
+  text-align: center;
+  margin-top: 37%;
+}
+.title {
+  color: white;
+  font-size: 4em;
+  font-family: "Kreon", serif;
+}
+.divtitle {
+  text-align: center;
+  margin-left: 5%;
+}
+.divtitle img {
+  width: 300px;
+}
+
+.quote {
+  color: white;
+  font-family: "Kotta One", serif;
+  font-size: 3em;
+  margin-left: 5%;
+}
+.stats {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Krub", sans-serif;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.more {
+  color: #fff;
+  font-size: 1em;
+  font-family: "Krub", sans-serif;
+  margin-left: 5%;
+  margin-top: 2%;
+  cursor: pointer;
+  transition: transform 2s ease;
+}
+.more:hover {
+  animation: morezin 0.5s linear forwards;
+}
+
+.azin {
+  text-decoration: none;
+}
+
+@keyframes morezin {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+#Pele,
+#Marta,
+#Socrates,
+#Rivellino,
+#Romario,
+#Cafu,
+#Ronaldinho {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  padding-top: 10%;
+}
+#sq {
+  font-size: 2em;
+}
+#pq {
+  font-size: 2.76em;
+}
+#rq {
+  font-size: 3.15em;
+}
+#roq {
+  font-size: 3.1em;
+}
+#cq {
+  font-size: 2.3em;
+}
+#ronq {
+  font-size: 2.2em;
+}
+.AN1:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN1:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN1:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN1:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN1:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN2:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN2:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN2:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN2:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN2:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN3:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN3:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN3:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN3:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN3:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN4:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN4:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN4:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN4:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN4:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN5:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN5:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN5:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN5:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN5:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN6:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN6:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN6:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN6:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN6:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.AN7:nth-child(2) {
+  transition-delay: 200ms;
+}
+.AN7:nth-child(3) {
+  transition-delay: 400ms;
+}
+.AN7:nth-child(4) {
+  transition-delay: 600ms;
+}
+.AN7:nth-child(5) {
+  transition-delay: 800ms;
+}
+.AN7:nth-child(6) {
+  transition-delay: 1000ms;
+}
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+::-webkit-scrollbar {
+  /*Trilho */
+  width: 10px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Rolagem */
+  background: #433d3d;
+  border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 479px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  body {
+    background-image: url(./imgs/Halls_Mobile.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-y: 1.5%;
+    background-position-x: 45%;
+  }
+  #halls {
+    font-size: 3em;
+  }
+  #Pele,
+  #Marta,
+  #Socrates,
+  #Rivellino,
+  #Romario,
+  #Cafu,
+  #Ronaldinho {
+    display: flex;
+    flex-direction: column;
+  }
+  .quote {
+    font-size: 1.5em;
+  }
+  .stats {
+    font-size: 2em;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+  .divtitle img {
+    width: 90%;
+    width: 200px;
+    margin-left: 0;
+  }
+  #sq {
+    font-size: 1.5em;
+  }
+  #pq {
+    font-size: 1.5em;
+  }
+  #rq {
+    font-size: 1.5em;
+  }
+  #roq {
+    font-size: 1.5em;
+  }
+  #cq {
+    font-size: 1.5em;
+  }
+  #ronq {
+    font-size: 1.5em;
+  }
+}
+/* Tablet */
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-image: url(./imgs/Halls_Tablet.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position-y: 5%;
+    background-position-x: 45%;
+  }
+  #halls {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin-top: 35%;
+  }
+  #Pele {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Desktop */
+@media (min-width: 769px) and (max-width: 1024px) {
+}

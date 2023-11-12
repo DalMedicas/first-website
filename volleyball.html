@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>TCM - Athlete Journeys</title>
+    <link rel="stylesheet" href="volley&fut.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="./imgs/AthleteJourneysSEMFUNDO.png" alt="logo"
+      /></a>
+    </header>
+    <div class="banner">
+      <div class="lista-video-atleta">
+        <video
+          src="./Videos/GibaVideo.mp4"
+          class="video-atleta giba active"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="./Videos/AnaMoserVideo.mp4"
+          class="video-atleta ana"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="./Videos/SerginhoVideo.mp4"
+          class="video-atleta serginho"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="./Videos/FernandaVideo.mp4"
+          class="video-atleta fernanda"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+          src="./Videos/BruninhoVideo.mp4"
+          class="video-atleta bruninho"
+          autoplay
+          muted
+          loop
+        ></video>
+        <video
+        src="./Videos/FofaoVideo.mp4"
+        class="video-atleta fofao"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+      src="./Videos/WalewskaVideo.mp4"
+      class="video-atleta walewska"
+      autoplay
+      muted
+      loop
+    ></video>
+    <video
+    src="./Videos/GabiVideo.mp4"
+    class="video-atleta gabi"
+    autoplay
+    muted
+    loop
+  ></video>
+      </div>
+      <div class="content">
+        <h1>Volleyball Museum</h1>
+        <h3 class="atleta giba active">GIBA</h3>
+        <h3 class="atleta ana" style="color: greenyellow">ANA MOSER</h3>
+        <h3 class="atleta serginho" style="color: goldenrod">SERGINHO</h3>
+        <h3 class="atleta fernanda" style="color: blue">FERNANDA</h3>
+        <h3 class="atleta bruninho" style="color: orange">BRUNINHO</h3>
+        <h3 class="atleta fofao" style="color: orangered">FOFÃO</h3>
+        <h3 class="atleta walewska" style="color: black">WALEWSKA</h3>
+        <h3 class="atleta gabi" style="color: red">GABI</h3>
+        <p>
+          The Brazilian Volleyball Museum is a true tribute to the greatest
+          players who contributed to the success of the sport in the country. In
+          this inspiring space, visitors can explore the rich history of
+          Brazilian volleyball, celebrating the passion and talent of the
+          athletes who became volleyball legends in Brazil and around the world.
+          It is a place of inspiration for future generations of players and
+          sports fans.
+        </p>
+      </div>
+      <div class="gallery">
+        <div class="carousel">
+          <a class="carousel-item" href="giba.html" onclick='MudarVideo("giba")'>
+            <h4>GIBA</h4>
+            <img src="./imgs/Giba_museum.jpg" alt="Image of Giba" />
+          </a>
+          <a class="carousel-item" href="ana.html" onclick='MudarVideo("ana")'>
+            <h4 style="color: greenyellow">ANA MOSER</h4>
+            <img src="./imgs/Ana_museum.jpg" alt="Image of Ana Moser" />
+          </a>
+          <a
+            class="carousel-item"
+            href="serginho.html"
+            onclick='MudarVideo("serginho")'
+          >
+            <h4 style="color: goldenrod">SERGINHO</h4>
+            <img src="./imgs/Serginho_museum.jpg" alt="Image of Serginho" />
+          </a>
+          <a
+            class="carousel-item"
+            href="fernanda.html"
+            onclick='MudarVideo("fernanda")'
+          >
+            <h4 style="color: blue">FERNANDA</h4>
+            <img
+              src="./imgs/Fernanda_museum.jpg"
+              alt="Image of Fernanda Venturini"
+            />
+          </a>
+          <a
+            class="carousel-item"
+            href="bruninho.html"
+            onclick='MudarVideo("bruninho")'
+          >
+            <h4 style="color: orange">BRUNINHO</h4>
+            <img src="./imgs/Bruninho_Museum.jpeg" alt="Image of Bruninho" />
+          </a>
+          <a
+          class="carousel-item"
+          href="fofao.html"
+          onclick='MudarVideo("fofao")'
+        >
+          <h4 style="color: orangered">FOFÃO</h4>
+          <img src="./imgs/fofao_museum.jpeg" alt="Image of Fofão" />
+        </a>
+        <a
+        class="carousel-item"
+        href="walewska.html"
+        onclick='MudarVideo("walewska")'
+      >
+        <h4 style="color: black">WALEWSKA</h4>
+        <img src="./imgs/walewska_museum.webp" alt="Image of Walewska" />
+      </a>
+      <a
+      class="carousel-item"
+      href="gabi.html"
+      onclick='MudarVideo("gabi")'
+    >
+      <h4 style="color: red">GABI</h4>
+      <img src="./imgs/gabi_museum.jpg" alt="Image of Gabriela Guimarães" />
+    </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="atletas.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
+  </body>
+</html>
