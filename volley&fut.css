@@ -162,6 +162,7 @@ header::after {
 .banner .gallery .carousel {
   width: 100%;
   height: 100%;
+  margin-top: 3%;
 }
 
 .carousel .carousel-item {
@@ -222,3 +223,38 @@ header::after {
   margin-top: 5%;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .banner {
+    padding: 80px 40px 100px;
+  }
+  .banner .content {
+    position: relative;
+    padding: 50px 0 100px;
+  }
+  .banner .content h1 {
+    font-size: 4em;
+  }
+  .banner .content p {
+    margin-bottom: 150px;
+  }
+  .banner .content .atleta {
+    font-size: 2em;
+  }
+  .banner .gallery {
+    width: 100%;
+    left: 0;
+  }
+  .banner .gallery .carousel {
+  margin-top: 2%;
+  }
+  }

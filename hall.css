@@ -329,4 +329,11 @@ section {
 }
 /* Desktop */
 @media (min-width: 769px) and (max-width: 1024px) {
+#halls {
+font-size: 8em;
+margin-top: 40%;
+}
+body {
+background-position-x: center;
+}
 }
